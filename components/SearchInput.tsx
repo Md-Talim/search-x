@@ -17,13 +17,13 @@ const SearchInput = () => {
     <form className='mx-auto flex w-3/5 items-center gap-4'>
       <input
         placeholder='Search...'
-        className='mx-auto block w-full rounded-lg px-6 py-4 text-[#777] shadow-lg focus:outline-none'
+        className='mx-auto block w-full rounded-lg px-6 py-4 text-dark shadow-lg focus:outline-none'
         ref={inputRef}
         required
       />
       <button
         onClick={submit}
-        className='rounded-lg bg-blue-500 px-6 py-4 text-white'
+        className='rounded-lg bg-primary px-6 py-4 text-lighter'
       >
         Search
       </button>
