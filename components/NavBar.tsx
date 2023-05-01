@@ -8,7 +8,6 @@ const NavBar = () => {
         <li>
           <ThemeToggleButton />
         </li>
-        <li>Github</li>
       </ul>
     </nav>
   );
