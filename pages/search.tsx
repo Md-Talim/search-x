@@ -8,15 +8,14 @@ import SearchInput from '@/components/SearchInput';
 
 export interface Data {
   searchInformation: {
-    searchTime: number;
     formattedSearchTime: string;
-    totalResults: string;
     formattedTotalResults: string;
   };
   items: {
     title: string;
     link: string;
     displayLink: string;
+    snippet: string;
   }[];
 }
 
