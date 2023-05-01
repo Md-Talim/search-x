@@ -4,9 +4,9 @@ import { moon, sun } from '@/assets';
 import { useEffect, useState } from 'react';
 
 const ThemeToggleButton = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === 'system' ? systemTheme : theme;
-  const [icon, setIcon] = useState(currentTheme === 'dark' ? sun : moon);
+  const { theme, setTheme } = useTheme();
+  const initialIcon = theme === 'light' ? moon : sun;
+  const [icon, setIcon] = useState(initialIcon);
 
   useEffect(() => {
     setIcon(theme === 'dark' ? sun : moon);
