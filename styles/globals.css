@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#F6F1F1] dark:bg-[#222];
+  @apply bg-lighter dark:bg-darker;
   font-family: 'Poppins', sans-serif;
 }
 
