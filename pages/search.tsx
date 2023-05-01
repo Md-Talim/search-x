@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 import Response from '@/data';
 import SearchResults from '@/components/SearchResults';
+import NavBar from '@/components/NavBar';
+import SearchInput from '@/components/SearchInput';
 
 export interface Data {
   searchInformation: {
@@ -49,6 +51,10 @@ const Search = ({ results }: { results: Data }) => {
       <Head>
         <title>{router.query.term} - Google Search</title>
       </Head>
+
+      <NavBar>
+        <SearchInput />
+      </NavBar>
 
       <SearchResults results={results} />
     </>

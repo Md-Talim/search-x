@@ -14,16 +14,16 @@ const SearchInput = () => {
   };
 
   return (
-    <form className='flex flex-col items-center gap-4'>
+    <form className='mx-auto flex w-3/5 items-center gap-4'>
       <input
         placeholder='Search...'
-        className='mx-auto block w-1/3 rounded-lg px-6 py-4 text-[#777] shadow-lg focus:outline-none'
+        className='mx-auto block w-full rounded-lg px-6 py-4 text-[#777] shadow-lg focus:outline-none'
         ref={inputRef}
         required
       />
       <button
         onClick={submit}
-        className='rounded-lg bg-blue-500 px-6 py-2 text-white'
+        className='rounded-lg bg-blue-500 px-6 py-4 text-white'
       >
         Search
       </button>
