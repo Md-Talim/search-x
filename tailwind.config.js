@@ -13,6 +13,7 @@ module.exports = {
       lighter: '#eee',
       dark: '#777',
       darker: '#222',
+      link: '#8ab4f8',
     },
   },
   plugins: [],
