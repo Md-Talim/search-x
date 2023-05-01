@@ -1,5 +1,4 @@
 import { Data } from '@/pages/search';
-import Image, { StaticImageData } from 'next/image';
 
 interface Props {
   results: Data;

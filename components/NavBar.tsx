@@ -7,7 +7,7 @@ interface Props {
 
 const NavBar = ({ children }: Props) => {
   return (
-    <nav className='container mx-auto flex items-center justify-between py-10'>
+    <nav className='container mx-auto flex items-center justify-between py-10 px-6 lg:px-0'>
       <h1 className='text-3xl'>SearchX</h1>
       {children}
       <ul className='flex items-center gap-4'>
