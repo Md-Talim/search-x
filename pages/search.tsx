@@ -26,7 +26,7 @@ export const getServerSideProps: GetServerSideProps = async (
   const API_KEY = process.env.API_KEY;
   const CONTEXT_KEY = process.env.CONTEXT_KEY;
 
-  const useDummyData = true;
+  const useDummyData = false;
   const startIndex = context.query.start || '0';
 
   const data: Data = useDummyData
