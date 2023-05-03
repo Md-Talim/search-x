@@ -14,7 +14,7 @@ const SearchInput = () => {
   };
 
   return (
-    <form className='mx-auto flex w-4/5 flex-col items-center gap-4 sm:w-3/5 md:flex-row'>
+    <form className='mx-auto flex items-center gap-4 md:w-3/5 '>
       <input
         placeholder='Search...'
         className='mx-auto block w-full rounded-lg px-6 py-4 text-dark shadow-lg focus:outline-none'
