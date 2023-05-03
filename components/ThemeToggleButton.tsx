@@ -9,7 +9,7 @@ const ThemeToggleButton = () => {
   const [icon, setIcon] = useState(initialIcon);
 
   useEffect(() => {
-    setIcon(theme === 'dark' ? sun : moon);
+    setIcon(theme === 'light' ? moon : sun);
   }, [theme]);
 
   return (
