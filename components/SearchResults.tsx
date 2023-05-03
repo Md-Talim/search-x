@@ -14,7 +14,10 @@ const SearchResults = ({ results }: Props) => {
       </section>
       <section className='mt-10 flex flex-col gap-6'>
         {results.items.map((item) => (
-          <section className='flex flex-col gap-1'>
+          <article
+            key={`${item.title}${item.displayLink}`}
+            className='flex flex-col gap-1'
+          >
             <p className='text-light'>{item.displayLink}</p>
             <h2>
               <a href={item.link} className='text-xl text-link hover:underline'>
@@ -22,7 +25,7 @@ const SearchResults = ({ results }: Props) => {
               </a>
             </h2>
             <p className='text-lg text-light'>{item.snippet}</p>
-          </section>
+          </article>
         ))}
       </section>
     </main>
