@@ -20,11 +20,11 @@ const SearchResults = ({ results }: Props) => {
           >
             <p className='text-light'>{item.displayLink}</p>
             <h2>
-              <a href={item.link} className='text-xl text-link hover:underline'>
+              <a href={item.link} className='text-xl text-link-dark dark:text-link hover:underline'>
                 {item.title}
               </a>
             </h2>
-            <p className='text-lg text-light'>{item.snippet}</p>
+            <p className='text-lg text-dark dark:text-light'>{item.snippet}</p>
           </article>
         ))}
       </section>
