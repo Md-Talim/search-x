@@ -18,9 +18,12 @@ const SearchResults = ({ results }: Props) => {
             key={`${item.title}${item.displayLink}`}
             className='flex flex-col gap-1'
           >
-            <p className='text-light'>{item.displayLink}</p>
+            <p className='font-medium text-primary'>{item.displayLink}</p>
             <h2>
-              <a href={item.link} className='text-xl text-link-dark dark:text-link hover:underline'>
+              <a
+                href={item.link}
+                className='text-xl text-link-dark hover:underline dark:text-link'
+              >
                 {item.title}
               </a>
             </h2>
